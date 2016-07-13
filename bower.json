@@ -1,0 +1,12 @@
+{
+  "name": "myles-keybase-pub",
+  "version": "1.0.0",
+  "authors": [
+    "Myles Braithwaite <me@mylesbraithwaite.com>"
+  ],
+  "dependencies": {
+    "bourbon": "^4.2.7",
+    "neat": "^1.8.0",
+    "normalize-scss": "^3.0.3"
+  }
+}

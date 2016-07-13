@@ -1,0 +1,26 @@
+<div class="bio">
+    {{#each keybase.them}}
+        <img class="bio__picture" src="{{pictures.primary.url}}">
+        
+        <h1 class="bio__username">{{basics.username}}</h1>
+        <h2 class="bio__full_name">{{profile.full_name}}</h2>
+        
+        <p class="bio__bio">{{profile.bio}}</p>
+        <p class="bio__location">{{profile.location}}</p>
+        
+        <div class="bio__proofs">
+            {{#each proofs_summary.all}}
+            <div class="proof proof--{{proof_type}}">
+                <a class="proof__service_url" href="{{service_url}}">
+                    <span class="proof__icon proof__icon--{{proof_type}}"></span>
+                    <span class="proof__nametag">{{nametag}}</span>
+                    <span class="proof__presentation_tag">@{{presentation_tag}}</span>
+                </a>
+                <a class="proof__human_url" href="{{human_url}}">
+                    <span class="proof__icon proof__icon--verify"></span>
+                </a>
+            </div>
+            {{/each}}
+        </div>
+    {{/each}}
+</div>
