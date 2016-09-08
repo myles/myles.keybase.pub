@@ -55,6 +55,7 @@ body {
   }
   
   @at-root #{&}__username {
+    color: #ccc;
     font-size: 2rem;
     font-weight: normal;
   }
