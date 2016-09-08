@@ -8,12 +8,26 @@ html {
   background-color: rgb(36, 165, 212);
 }
 
+body {
+  font-size: 14px;
+  
+  @include media(min-width 360px) {
+    font-size: 18px;
+  }
+}
+
 .container {
   background-color: #fff;
   margin: 1rem auto;
   text-align: center;
   width: 360px;
   padding-bottom: 1rem;
+
+  @include media(max-width 360px) {
+    width: 300px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .bio {
@@ -22,7 +36,7 @@ html {
   }
   
   @at-root #{&}__username,
-           #{&}__full_name,
+           #{&}__full-name,
            #{&}__bio,
            #{&}__location {
     padding: 0;
@@ -30,7 +44,7 @@ html {
   }
   
   @at-root #{&}__username,
-           #{&}__full_name {
+           #{&}__full-name {
     font-family: 'Playfair Display', serif;
   }
   
@@ -45,7 +59,7 @@ html {
     font-weight: normal;
   }
   
-  @at-root #{&}__full_name {
+  @at-root #{&}__full-name {
     font-size: 1.8rem;
     font-weight: normal;
   }
@@ -69,7 +83,7 @@ html {
     display: none;
   }
   
-  @at-root #{&}__service_url {
+  @at-root #{&}__service-url {
     text-decoration: none;
     color: #000;
   }
@@ -101,7 +115,7 @@ html {
     }
   }
   
-  @at-root #{&}__presentation_tag {
+  @at-root #{&}__presentation-tag {
     color: #ccc;
   }
 }
