@@ -15,7 +15,7 @@ module.exports = function (grunt) {
     grunt.registerTask('deploy', [
         'clean:build',
         'build',
-        'clean:keybase',
+        // 'clean:keybase',
         'copy:keybase'
     ]);
 
