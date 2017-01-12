@@ -23,6 +23,12 @@
     "handlebars-helpers": "^0.6.2"
   },
   "dependencies": {
-    "grunt-curl": "^2.2.0"
-  }
+    "grunt-curl": "^2.2.0",
+    "snyk": "^1.24.4"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
