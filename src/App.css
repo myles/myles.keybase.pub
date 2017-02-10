@@ -1,0 +1,15 @@
+.App {
+  background-color: #fff;
+  margin: 1rem auto;
+  text-align: center;
+  width: 360px;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 360px) {
+  .App {
+    width: 300px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

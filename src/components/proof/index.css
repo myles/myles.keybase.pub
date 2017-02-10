@@ -1,0 +1,46 @@
+.proof {
+  text-align: left;
+  line-height: 36px;
+  margin: 1rem .5rem;
+  clear: both;
+
+  @at-root #{&}--hackernews {
+    display: none;
+  }
+
+  @at-root #{&}__service-url {
+    text-decoration: none;
+    color: #000;
+  }
+
+  @at-root #{&}__icon {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+
+    @at-root #{&}--twitter {
+      background-image: url(../images/twitter.svg);
+    }
+
+    @at-root #{&}--dns {
+      background-image: url(../images/globe.svg);
+    }
+
+    @at-root #{&}--reddit {
+      background-image: url(../images/reddit.svg);
+    }
+
+    @at-root #{&}--github {
+      background-image: url(../images/github.svg);
+    }
+
+    @at-root #{&}--coinbase {
+      background-image: url(../images/bitcoin.svg);
+    }
+  }
+
+  @at-root #{&}__presentation-tag {
+    color: #ccc;
+  }
+}
