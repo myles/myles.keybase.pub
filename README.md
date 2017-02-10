@@ -4,20 +4,26 @@
 
 **Build** the website:
 
-    $ grunt build
+```
+$ yarn run build
+```
 
 Build the website and **run** a web server:
 
-	$ grunt run
+```
+$ yarn start
+```
 
 **Deploy** the website to Keybase:
 
-	$ grunt deploy
+```
+$ grunt deploy
+```
 
 ## Develop
 
-You will need to install the *Ruby*, *Node.js*, and *Bower* libraries:
+You will need to install the *Node.js* libraries:
 
-	$ gem install sass
-	$ npm install
-	$ bower install
+```
+$ yarn install
+```

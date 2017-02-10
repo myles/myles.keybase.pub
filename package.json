@@ -9,7 +9,7 @@
   "bugs": {
     "url": "https://github.com/myles/myles.keybase.pub/issues"
   },
-  "homepage": "https://github.com/myles/myles.keybase.pub#readme",
+  "homepage": "https://myles.keybase.pub",
   "private": true,
   "devDependencies": {
     "react-scripts": "0.8.5"
